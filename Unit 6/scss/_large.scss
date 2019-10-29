@@ -1,0 +1,39 @@
+header, nav, main, footer {
+        max-width: 75rem;
+        margin:auto;
+}
+ 
+/*----------- BODY --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+    
+}
+
+#members-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+
+
+
+/*----------- MAIN --------------*/
+
+
+
+/*----------- FOOTER --------------*/
+    
