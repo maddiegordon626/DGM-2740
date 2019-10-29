@@ -1,0 +1,69 @@
+header, nav, main {
+        max-width: 75rem;
+        margin:auto;
+}
+ 
+/*----------- BODY --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+    
+}
+
+
+#attorney-section {
+    margin: 10px;
+}
+
+#client-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+}
+
+#client-section button {
+    padding: 20px 40px;
+    margin: 20px;
+    background-color: rgb(69, 80, 92);
+    color: white;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  #tip-section {
+    display: flex;
+}
+#blog-section {
+    display: flex;
+    flex-direction: row;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.blog-post {
+    margin: 0 5px;
+    display: flex;
+    flex-direction: column;
+    max-width: 20%;
+}
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+
+nav button {
+    display: none;
+}
+
+/*----------- MAIN --------------*/
+
+
+
+/*----------- FOOTER --------------*/
+    
