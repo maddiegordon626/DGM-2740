@@ -1,0 +1,48 @@
+header, nav, main, footer {
+        max-width: 75rem;
+        margin:auto;
+}
+ 
+/*----------- BODY --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+    
+}
+
+.hero {
+    max-width: 75rem;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.founder {
+    width: 25%;
+    float: right;
+    clear: left;
+    margin-bottom: 20px;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+
+
+
+/*----------- MAIN --------------*/
+
+
+
+/*----------- FOOTER --------------*/
+    
