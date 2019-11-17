@@ -1,0 +1,279 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: 'Cabin', sans-serif;
+    font-weight: normal;
+}
+
+
+/*----------- HEADER --------------*/
+div#headerWrapper {
+    background-color: rgb(129, 149, 185);
+    border-top: solid 5px rgb(69, 80, 92);
+}
+
+header {
+    padding: .5rem 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#headerTitle {
+    align-items: flex-end;
+}
+
+header h1 {margin: 0; font-weight: bold;}
+header h2 {margin: 0; font-weight: normal;}
+
+
+/*----------- NAVIGATION --------------*/
+
+nav {
+    background-color:rgb(69, 80, 92);
+   height: 40px;
+   
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+}
+nav ul li {
+    float: left;
+    width: 100%;
+}
+nav ul li a {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(69, 80, 92);
+    color: #eee;
+    border-left: 1px solid #777;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+nav ul li:first-child a {border-left: none;}
+
+nav ul li a:hover {
+    background-color: lightgray;
+    color: lightslategrey;
+}
+nav ul li.active a {
+    background-color: gray;
+    color: #fff;
+}
+
+nav ul.closed {
+    display: none;
+}
+
+nav button {
+    width: 70px;
+    height: 35px;
+    background-color: rgb(69, 80, 92);
+    background-size: 80%;
+    border-radius: 10px;
+    color: white;
+}
+
+.header-search {
+    display: none;
+}
+
+.nav-search {
+    float: right;
+    clear: both;
+    position: relative;
+    bottom: 25px;
+}
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+    
+}
+
+.row {
+    clear: both;
+}
+
+.attorney{
+    text-align: center;
+    padding: 0 20px;
+    
+}
+
+main .card {
+    background-color: rgb(129, 149, 185);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 20rem;
+    max-width: 10rem;
+    margin: 1rem auto;
+}
+
+main .card figure {
+    margin: 0;
+    width: 100%;
+}
+main .card figure img {
+    width: 100%;
+}
+
+main .card button {
+    margin: 1rem 0;
+    height: 2rem;
+    width: 8rem;
+    border-radius: 10px;
+    background-color: rgb(69, 80, 92);
+    color: white; 
+}
+
+.card button:hover {
+    color: black;
+    background-color: lightgray;
+}
+
+.client {
+    margin: 4rem;   
+}
+
+
+
+.client button {
+    padding: 20px 40px;
+    margin: 20px;
+    background-color: rgb(69, 80, 92);
+    color: white;
+    width: 100%;
+}
+
+.client button:hover {
+    color: black;
+    background-color: lightgray;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.blog-post {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.blog-post img {
+    max-width: 100%;
+}
+
+.blog-post button {
+    background-color: rgb(69, 80, 92);
+    width: 100%;
+    height: 2rem;
+    color: white;
+}
+
+.blog-post button:hover {
+    color: black;
+    background-color: lightgray;
+}
+
+.tip {
+    display: none;
+}
+
+.tips, .faq {
+    background-color: gray;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+span a {
+    color: white;
+}
+
+main .small-1 {
+    width: 8.3333333333%;
+    float: left; }
+  main .small-2 {
+    width: 16.6666666667%;
+    float: left; }
+  main .small-3 {
+    width: 25%;
+    float: left; }
+  main .small-4 {
+    width: 33.3333333333%;
+    float: left; }
+  main .small-5 {
+    width: 41.6666666667%;
+    float: left; }
+  main .small-6 {
+    width: 50%;
+    float: left; }
+  main .small-7 {
+    width: 58.3333333333%;
+    float: left; }
+  main .small-8 {
+    width: 66.6666666667%;
+    float: left; }
+  main .small-9 {
+    width: 75%;
+    float: left; }
+  main .small-10 {
+    width: 83.3333333333%;
+    float: left; }
+  main .small-11 {
+    width: 91.6666666667%;
+    float: left; }
+  main .small-12 {
+    width: 100%;
+    float: left; }
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: rgb(129, 149, 185);
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+footer ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul li {
+    padding: 0 10px;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
