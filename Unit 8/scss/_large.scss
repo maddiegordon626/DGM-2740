@@ -1,0 +1,41 @@
+header, nav, main {
+        max-width: 75rem;
+        margin:auto;
+}
+ 
+#navWrapper {
+    max-width: 100%;
+}
+/*----------- BODY --------------*/
+#wrapper {
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.item1 {
+	grid-row: 1 / span 2;
+}
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+ 
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+
+nav button {
+    display: none;
+}
+
+/*----------- MAIN --------------*/
+
+
+
+/*----------- FOOTER --------------*/
+    
