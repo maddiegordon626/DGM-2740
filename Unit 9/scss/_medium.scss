@@ -1,0 +1,30 @@
+
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+    nav ul {margin-left: 2%;}
+    nav ul li {width: auto;}
+    nav ul li:first-child a {border-left: 1px solid #777;}
+    nav ul li:last-child a {border-right: 1px solid #777;}
+    nav ul li a{padding: .5rem 1rem;}
+    nav button {
+        display: none;
+    }
+    nav ul.closed {
+        display: block;
+    }
+/*----------- MAIN --------------*/
+.bottom-4up {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+/*----------- FOOTER --------------*/
+    

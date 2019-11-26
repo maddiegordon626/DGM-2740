@@ -1,0 +1,43 @@
+header, nav, main {
+        max-width: 75rem;
+        margin:auto;
+}
+ 
+#navWrapper {
+    max-width: 100%;
+}
+/*----------- BODY --------------*/
+.bottom-4up {
+    display: flex;
+    width: 186%;
+    
+}
+
+.image-slider {
+	position: relative;
+	left: 400px;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+ 
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+
+nav button {
+    display: none;
+}
+
+/*----------- MAIN --------------*/
+
+
+
+/*----------- FOOTER --------------*/
+    

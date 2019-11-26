@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Fill Me In">
+<meta name="author" content="John Doe">
+
+<!-- This start file was build by Paul Cheney  -->
+<title>09 Boston City</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!--FONT-->
+<link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+<!-- STYLE SHEETS -->
+<link href="css/styles.css" rel="stylesheet">
+
+
+</head>    
+
+</head>
+<body>
+<!-- HEADER HERE -->
+ <div id="headerWrapper">  
+    <header> 
+         <h1>Boston City</h1>
+         <h3>Where History Comes Alive</h3>
+    </header>
+</div>   <!-- end of header wrapper-->
+    
+<!-- NAVIGATION HERE -->
+  <div id="navWrapper"> 
+    <nav class="clearfix">
+            <button id="hamburgerBtn">MENU</button>
+        <ul id="primaryNav" class="closed">
+            <li class="active"><a href="#">Visit</a></li>
+            <li><a href="#">Employment</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Pay Bills</a></li>
+            <li><a href="#">Meetings</a></li>
+            <li><a href="#">Help</a></li>
+
+        </ul>
+    </nav>
+</div>  <!--end of nav wrapper-->   
+    
+<!-- CONTENT HERE -->
+<div id="mainWrapper">
+    <main class="clearfix">  
+         <div id="wrapper" class="clearfix">
+            <div class="image-slider">
+                <picture>
+                    <source srcset="images/boston-1.png" media="(min-width: 28.12.25rem)">
+                        <img src="images/boston-1.png" alt="Boston">
+                </picture>
+                <picture>
+                    <source srcset="images/boston-2.png" media="(min-width: 28.12rem)">
+                        <img src="images/boston-2.png" alt="Boston">
+                </picture>
+                <picture>
+                    <source srcset="images/boston-3.png" media="(min-width: 28.12rem)">
+                        <img src="images/boston-3.png" alt="Boston">
+                </picture>
+                <picture>
+                    <source srcset="images/boston-4.png" media="(min-width: 28.12rem)">
+                        <img src="images/boston-4.png" alt="Boston">
+                </picture>
+            </div><!--end slider-->
+            <div class="plan">
+                <h2 class="section-header">Plan Your Visit</h2>
+                <div class="bottom-4up">
+                <a href="#" class="stay">
+                    <div class="coverColor"></div>
+                    <div class="icon"><i class="fas fa-bed fa-5x"></i></div>
+                    <div class="text">Places to Stay</div>
+                    <img src="images/boston-hotel.png" class="photo" alt="boston hotels">
+                </a>
+                <a href="#" class="attractions">
+                    <div class="coverColor"></div>
+                    <div class="icon"><i class="fas fa-map-marked fa-5x"></i></div>
+                    <div class="text">Walk the Red Line</div>
+                    <img src="images/boston-attraction.png" class="photo" alt="boston ">
+                </a>
+                <a href="#" class="stay">
+                    <div class="coverColor"></div>
+                    <div class="icon"><i class="fas fa-landmark fa-5x"></i></div>
+                    <div class="text">Pass to the City</div>
+                    <img src="images/boston-history.png" class="photo" alt="boston ">
+                </a>
+                <a href="#" class="dining">
+                    <div class="coverColor"></div>
+                    <div class="icon"><i class="fas fa-utensils fa-5x"></i></div>
+                    <div class="text">Fine Dining</div>
+                    <img src="images/boston-restaurant.png" class="photo" alt="boston restaurants">
+                </a>
+            </div>
+            </div>
+        </div>   
+    </main>
+</div> <!--end of main wrapper-->  
+<!-- FOOTER HERE --> 
+<div id="footerWrapper">
+    <footer>
+        <div class="copy">&copy; 2019 &bull; Maddie Gordon</div>
+    </footer>
+</div>  <!--end of footer wrapper-->
+<script src="menuToggle.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript">
+
+
+ $(document).ready(function () {
+                $('.image-slider').slick({
+                    autoplay: true,
+                    dots: true,
+                    arrows: false,
+                    cssEase: 'ease-out',
+                    speed: 2000,
+                    autoplaySpeed: 10000
+                });
+            });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: normal;
+}
+
+
+/*----------- HEADER --------------*/
+div#headerWrapper {
+    background-color: lightblue;
+
+}
+
+header {
+    padding: 20px 2%;
+}
+
+header img {
+    width: 20%;
+}
+
+
+
+/*----------- NAVIGATION --------------*/
+
+nav {
+    background-color:rgb(69, 80, 92);
+   
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+}
+nav ul li {
+    float: left;
+    width: 100%;
+}
+nav ul li a {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(69, 80, 92);
+    color: #eee;
+    border-left: 1px solid #777;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+nav ul li:first-child a {border-left: none;}
+
+nav ul li a:hover {
+    background-color: lightgray;
+    color: lightslategrey;
+}
+nav ul li.active a {
+    background-color: gray;
+    color: #fff;
+}
+
+nav ul.closed {
+    display: none;
+}
+
+nav button {
+    width: 70px;
+    height: 35px;
+    background-color: rgb(69, 80, 92);
+    background-size: 80%;
+    border-radius: 10px;
+    color: white;
+}
+
+#navWrapper {
+    background-color:rgb(69, 80, 92);
+    width: 100%;
+}
+/*----------- MAIN --------------*/
+#mainWrapper {
+    max-width: 64rem;
+}
+
+.image-slider {
+    width: 100%;
+    
+}
+.image-slider img {
+    width: 100%;
+} 
+
+.bottom-4up {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+
+
+.plan h2 {
+    margin-left: 2%;
+}
+
+.plan a {
+    display: block;
+    float: left;
+    width: 100%;
+    margin: 1rem auto 0.5rem auto;
+    position: relative;
+
+}
+
+.plan a img {
+    width: 100%;
+    height: auto;
+}
+
+.icon {
+    position: absolute;
+    top: 3rem;
+    width: 100%;
+    text-align: center;
+}
+
+.text {
+    position: absolute;
+    top: 8rem;
+    width: 100%;
+    text-align: center;
+}
+
+a:hover div.coverColor {
+    opacity: 0.3;
+}
+
+.stay {
+    color: white;
+}
+
+a.stay div.coverColor {
+    background-color: maroon;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s;
+
+}
+
+.dining {
+    color: white;
+}
+
+.dining div.coverColor {
+    background-color: teal;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s;
+}
+
+.dining div.text {
+    top: 9rem;
+}
+
+.attractions {
+    color: white;
+}
+
+.attractions div.coverColor {
+    background-color: darkolivegreen;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s;
+}
+
+.attractions div.text {
+    top: 9rem;
+}
+
+.history {
+    color: white;
+}
+
+.history div.coverColor {
+    background-color: lightsteelblue;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s;
+}
+
+.history div.text {
+    top: 9rem;
+}
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: rgb(129, 149, 185);
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+.list-section {
+    display: flex;
+    justify-content: center;  
+}
+
+
+
+.list ul  {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+footer ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul li {
+    padding: 0 10px;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
