@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Fill Me In">
+<meta name="author" content="John Doe">
+
+<!-- This start file was build by Paul Cheney  -->
+<title>10 Swag Shop</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!--FONT-->
+<link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
+
+<!-- STYLE SHEETS -->
+<link href="css/styles.css" rel="stylesheet">
+
+
+</head>    
+
+</head>
+<body>
+<!-- HEADER HERE -->
+ <div id="headerWrapper">  
+    <header> 
+            <img src="images/shop-logo.png">
+            <h1>Swag Shop</h1>
+
+    </header>
+</div>   <!-- end of header wrapper-->
+    
+<!-- NAVIGATION HERE -->
+  <div id="navWrapper"> 
+    <nav class="clearfix">
+        <div class="topnav" id="myTopnav">
+            <a href="#home" >Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Products
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Water Bottles</a>
+                  <a href="#">Hats</a>
+                  <a href="#">Shirts</a>
+                </div>
+              </div>
+            <a href="#news">Deals</a>
+            <a href="#contact" class="active">Order</a>
+            <a href="#about">Customer Reviews</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+          </div>
+    </nav>
+</div>  <!--end of nav wrapper-->   
+    
+<!-- CONTENT HERE -->
+<div id="mainWrapper">
+    <main class="clearfix">  
+         <div id="wrapper" class="clearfix">
+            <h2>Orders</h2>
+            <form method="GET">
+                <fieldset class="custInfo">
+                    <legend>Customer Information</legend>
+                    <label for="fname" class="top">
+                        Full Name<input 
+                        type="text" id="fname" name="fname" placeholder="Jane Doe" required>
+                    </label>
+                    <label for="phone" class="top">
+                        Phone<input 
+                        type="text" id="phone" name="phone" placeholder="801-123-4567" required>
+                    </label>
+                    <label for="email" class="top">
+                        Email<input 
+                        type="text" id="email" name="email" placeholder="email@email.com" required>
+                    </label>
+                </fieldset>
+
+                <fieldset class="swagInfo">
+                    <legend>Swag Information</legend>
+                    <label for="dateNeeded" class="top">
+                        Date Needed<input 
+                        type="date" id="dateNeeded" name="dateNeeded">
+                    </label>
+                    <label for="busName" class="top">
+                        Business Name<input 
+                        type="text" id="busName" name="busName" placeholder="My Swag Shop">
+                    </label>
+                    <label for="busURL" class="top">
+                        Business URL<input 
+                        type="url" id="busURL" name="busURL" placeholder="www.myswag.com">
+                    </label>
+                    <label for="colorSelect" class="top">
+                        Color<select name="color" id="colorSelect">
+                            <option value="">Please Select</option>
+                            <option value="silver">Silver</option>
+                            <option value="corsair_esports">Corsair eSports</option>
+                            <option value="black">Black</option>
+                            <option value="RGB">RGB</option>
+                        </select>
+                    </label>
+                    
+                    <h4>Material</h4>
+                    <label for="aluminum" class="sbs">
+                        <input 
+                        type="radio" id="alumnium" name="aluminum" value="Alumninum">
+                        Aluminum
+                    </label>
+                    <label for="steel" class="sbs">
+                        <input 
+                        type="radio" id="steel" name="steel" value="Steel">
+                        Steel
+                    </label>
+                </fieldset>
+
+                <fieldset class="paymentInfo">
+                    <legend>Payment Information</legend>
+                    <label for="cardName" class="top">
+                        Name on Card<input 
+                        type="text" id="cardName" name="cardName" placeholder="Jane Doe" required>
+                    </label>
+                    <label for="cardNum" class="top">
+                        Card Number<input 
+                        type="number" id="cardNum" name="cardNum" placeholder="****-****-****-****" required>
+                    </label>
+                    <label for="expiration" class="top">
+                        Expiration Date<input 
+                        type="text" id="expiration" name="expiration" placeholder="mm/yy" required>
+                    </label>
+                </fieldset>
+
+                <input type="submit" class="submitBtn" value="Order My Swag">
+
+            </form>
+        </div>   
+    </main>
+</div> <!--end of main wrapper-->  
+<!-- FOOTER HERE --> 
+<div id="footerWrapper">
+    <footer>
+        
+        <div class="copy">&copy; 2019 &bull; Swag Shop &bull; 1-800-555-555 &bull; Login</div>
+    </footer>
+</div>  <!--end of footer wrapper-->
+<script src="menuToggle.js"></script>
+<script>/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }</script>
+</body>
+</html>
