@@ -1,0 +1,53 @@
+
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+nav {
+    
+    width: 150px;
+    height: 800px;
+}
+    nav ul {
+        margin-left: 2%;
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+    nav ul li {width: auto;}
+    nav ul li:first-child a {border-left: 1px solid #777;}
+    // nav ul li:last-child a {border-right: 1px solid #777;}
+    nav ul li a{padding: .5rem 1rem;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav ul.closed {
+        display: block;
+    }
+
+/*----------- MAIN --------------*/
+
+main {
+    position: relative;
+    left: 150px;
+    bottom: 800px;
+    width: 80%;
+}
+
+/*----------- FOOTER --------------*/
+    
+footer {
+    position: relative;
+    bottom: 820px;
+}
