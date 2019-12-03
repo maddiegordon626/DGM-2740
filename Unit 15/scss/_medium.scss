@@ -1,0 +1,32 @@
+
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+ 
+nav {
+    justify-content: flex-end;
+}
+
+/*----------- MAIN --------------*/
+
+.hero {
+    max-width: 75rem;
+    display: flex;
+    justify-content: center;
+}
+
+.more {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*----------- FOOTER --------------*/
+    

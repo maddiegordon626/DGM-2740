@@ -1,0 +1,85 @@
+header, nav, main, footer {
+        max-width: 75rem;
+        margin:auto;
+}
+
+.logo {
+    width: 10%;
+}
+
+/*----------- BODY --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+    
+}
+
+.hero {
+    max-width: 75rem;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.blade-1 {
+    display: flex;
+}
+
+.expect {
+    margin: 20px;
+}
+.more {
+    display: flex;
+}
+
+.tech {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.infra {
+    grid-column: 1;
+}
+
+.technology {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.live {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.pricing {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    margin: 10px;
+}
+
+button {
+    position: relative;
+    left: 10px;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+
+
+
+/*----------- MAIN --------------*/
+
+
+
+/*----------- FOOTER --------------*/
+    
