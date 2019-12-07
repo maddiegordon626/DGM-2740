@@ -6,7 +6,7 @@
 <meta name="author" content="John Doe">
 
 <!-- This start file was build by Paul Cheney  -->
-<title>05 Restaurant Site</title>
+<title>12 Tech Watch</title>
 
 <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -29,15 +29,13 @@
     
 <!-- NAVIGATION HERE -->
   <div id="navWrapper"></div>  
-    <nav class="clearfix">
-            <button id="hamburgerBtn">MENU</button>
-        <ul id="primaryNav" class="closed">
-             
+    <nav  class="clearfix ">
+        <button id="hamburger"><a href="#skip-nav">&#9776;</a></button>
+        <ul id="primaryNav" class="closed"> 
             <li><a href="#">Phone</a></li>
             <li class="active"><a href="#">Tablets</a></li>
             <li><a href="#">Laptops</a></li>
             <li ><a href="#">Games</a></li>  
-            <!-- <li><a href="#">TVs</a></li> -->
             <li><a href="#">Cameras</a></li>
             <li><a href="#">Headsets</a></li>  
         </ul>
@@ -86,6 +84,16 @@
         &copy; 2019 &bull; All rights reserved &bull; etc
     </footer>
 </div>  <!--end of footer wrapper-->
-<script src="menuToggle.js"></script>
+<div id="skip-nav">
+    <button class="hamburger"><a href="#navWrapper">X</a></button>
+    <ul id="primaryNav" class="closed"> 
+        <li><a href="#">Phone</a></li>
+        <li class="active"><a href="#">Tablets</a></li>
+        <li><a href="#">Laptops</a></li>
+        <li ><a href="#">Games</a></li>  
+        <li><a href="#">Cameras</a></li>
+        <li><a href="#">Headsets</a></li>  
+    </ul>
+</div>
 </body>
 </html>
